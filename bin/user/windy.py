@@ -75,7 +75,7 @@ def logerr(msg):
 
 class Windy(weewx.restx.StdRESTbase):
     # New v2 API endpoint
-    DEFAULT_URL = 'https://api.windy.com/api/v2/observation/update'
+    DEFAULT_URL = 'https://stations.windy.com/api/v2/observation/update'
 
     def __init__(self, engine, cfg_dict):
         super(Windy, self).__init__(engine, cfg_dict)
