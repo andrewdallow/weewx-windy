@@ -2,7 +2,7 @@
 
 WeeWX extension that sends data to windy.com
 
-You will need an API key from windy.com
+You will need a STATION_ID and STATION_PASSWORD from windy.com
 
   https://stations.windy.com/
 
@@ -24,8 +24,9 @@ You will need an API key from windy.com
 
     ```
     [StdRESTful]
-        [[Windy]]
-            api_key = API_KEY
+       [[Windy]]
+           password = STATION_PASSWORD
+           station = pws-station-001
    ```
 
 3) restart weewx. For example:
